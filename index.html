@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Swimming Pool</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="style/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="scripts/script.js"></script>
+
+ 
+    
+</head>
+ 
+<body>
+    <h2>Enter the information below for personalized results!</h2>
+<!-- create tablea nd collect user inputs -->
+    <table cellpadding="10" cellspacing="2">
+
+        <th class="row1">Account information</th>
+        <tr>
+            <td class="col1"><input type="text" name="name" id="name" placeholder="Your Name"></td> </tr>
+            <td class="col2"><input type="text" name="user" id="user" placeholder="Username"></td> </tr> 
+            <td class="col3"><input type="password" name="pwd" id="pwd" placeholder="Password"></td>
+        </tr>
+
+        <th class="row1">Favorite Holiday</th>
+        <tr>
+            <td class="col1">
+                <select name="holiday" id="holiday">
+                    <option value="Easter">Easter</option>
+                    <option value="America">4th of July</option>
+                    <option value="Halloween">Halloween</option>
+                    <option value="Thanksgiving">Thanksgiving</option>
+                    <option value="Christmas">Christmas</option>
+                    <option value="Other">Other</option>
+                </select>
+            </td>
+        </tr>
+
+        <th class="row1">Started High School</th>
+        <tr>
+            <td class="col1"><input type="date" name="hsStart" id="hsStart" class="startDate"></td>
+        </tr>
+        <th class="row1">Finished High School</th>
+        <tr>
+            <td class="col1"><input type="date" name="hsEnd" id="hsEnd" class="endDate"></td>
+        </tr>
+
+        <th class="row1">Gender</th>
+        <tr>
+            <td class="gender">
+                <input type="radio" name="priority"id="gender" name="male"> Male
+                <input type="radio" name="priority" id="gender" name="female"> Female
+                <input type="radio" name="priority" id="gender" name="other"> Other
+            </td>
+        </tr>
+
+        <th class="row1">Enter 3 facts about you below!</th>
+        <tr>
+            <td class="col2"><textarea name="description" id="description" cols="35" rows="4"></textarea></td>
+        </tr>
+
+
+
+        <tr colspan="2" align="center">
+            <td>
+                <button type="submit" class="submit1"  onclick="display()">Submit</button>
+            </td>
+        </tr>
+
+        <tr colspan="1" align="center">
+            <td>
+                <button type="reset" class="reset" onclick="resetProjectDetails()">Clear</button>
+            </td>
+        </tr>
+
+<!-- Below will display results  -->
+        <tr style="background-color:#8FBC8F;">
+        <td align="center"><b>Name</b></td>
+        <td align="center"><b>Username</b></td>
+        <td align="center"><b>Password</b></td>
+        <td align="center"><b>Favorite Holiday</b></td>
+        <td align="center"><b>High School Start</b></td>
+        <td align="center"><b>High School Graduation</b></td>
+        <td align="center"><b>Gender</b></td>
+        </tr> 
+
+        <tr>
+        <td align="center"><div id="displayarea"></div></td>
+        <td align="center"><div id="displayarea1"></div></td>
+        <td align="center"><div id="displayarea2"></div></td>
+        <td align="center"><div id="displayarea3"></div></td>
+        <td align="center"><div id="displayarea4"></div></td>
+        <td align="center"><div id="displayarea5"></div></td>
+        <td align="center"><div id="displayarea6"></div></td>
+        </tr>
+
+
+    </table>
+
+</body> 
+</html> 
